@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript and Bootstrap">
+  <meta name="author" content="Ahsan Mughal">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/Favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/Favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/Favicons/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/Favicons/site.webmanifest">
+  <link rel="mask-icon" href="./assets/img/Favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00a300">
+  <meta name="theme-color" content="#ffffff">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  <link rel="stylesheet" href="./assets/css/lightbox.min.css">
+  <!-- Boxicons CSS -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Fruits Multi pages website fully responsive | Bootstrap</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+  <!-- Navbar  -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/img/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class=""></span> -->
+          <i class='bx bx-menu navbar-toggler-icon'></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./product.html">product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gallery.html">gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">contact</a>
+            </li>
+          </ul>
+          <div class="call text-center align-items-center text-white">
+            <span>Call</span>
+            <p>+92-3074961-938</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Banner  -->
+  <section class="home" id="home">
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption">
+              <h1>100% Organic</h1>
+              <h3>Fresh and natural fruits.</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non inventore facilis dignissimos quae? Ut,
+                temporibus corporis!</p>
+              <a href="./product.html" class="btn-brand">All Product</a>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="carousel-caption">
+              <h1>Healthy and Tasty</h1>
+              <h3>Fresh and natural fruits.</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non inventore facilis dignissimos quae? Ut,
+                temporibus corporis!</p>
+              <a href="./product.html" class="btn-brand">All Product</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Features section  -->
+  <section class="features">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="card py-5">
+            <div class="card-icon">
+              <img src="./assets/img/feature-icon/ui-chat.svg" alt="Chat">
+            </div>
+            <div class="card-body text-center mb-5">
+              <h5>24/7 Support</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card py-5">
+            <div class="card-icon">
+              <img src="./assets/img/feature-icon/truck-loaded.svg" alt="Chat">
+            </div>
+            <div class="card-body text-center mb-5">
+              <h4>Free Shipping</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card py-5">
+            <div class="card-icon">
+              <img src="./assets/img/feature-icon/wheat.svg" alt="Chat">
+            </div>
+            <div class="card-body text-center mb-5">
+              <h4>Fresh and Healthy</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card py-5">
+            <div class="card-icon">
+              <img src="./assets/img/feature-icon/lemon.svg" alt="Chat">
+            </div>
+            <div class="card-body text-center mb-5">
+              <h4>Pure and Natural</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Landing About Section  -->
+  <section class="landing-about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-8">
+          <div class="about-content">
+            <h2>we providing services since 1992 with proud</h2>
+            <p class="fw-bold mb-3">The readable content offapage when looking layout using Lorem Ipsumis that it has.
+            </p>
+            <p class="mb-3">It isalong established fact thatareader will be distracted the readable
+              content offapage when looking at its layout using Lorem Ipsum is that it
+              has.It isalong established fact thatareader will be distracted the readable
+              content offapage when looking at its layout using Lorem ipsum is that it
+              has.</p>
+            <p class="mb-5">It isalong established fact thatareader will be distracted the readable
+              content offapage when looking at its layout using Lorem Ipsum is that it
+              has.</p>
+            <a href="./about.html" class="btn-brand">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Landing Product Section  -->
+  <section class="lading_product">
+    <div class="container">
+      <div class="intro text-center">
+        <h3 class="section-title">our best saller products</h3>
+        <p class="section-subtitle">The Passage ExperiencedASurge In Popularity During The 1960s When
+          Again During The 90s As Desktop Publishers</p>
+      </div>
+      <div class="row g-4 mt-5">
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-icon">
+              <img src="./assets/img/products/product-1.jpg" alt="Product">
+            </div>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h4>Musk Melon</h3>
+                <span class="text-decoration-line-through">$50KG</span>
+            </div>
+            <div class="card-overly">
+              <a href="./product.html" class="btn-brand">view Product</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-icon">
+              <img src="./assets/img/products/product-2.jpg" alt="Product">
+            </div>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h4>Orange</h3>
+                <span class="text-decoration-line-through">$50KG</span>
+            </div>
+            <div class="card-overly">
+              <a href="./product.html" class="btn-brand">view Product</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-icon">
+              <img src="./assets/img/products/product-3.jpg" alt="Product">
+            </div>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h4>Apple </h3>
+                <span class="text-decoration-line-through">$50KG</span>
+            </div>
+            <div class="card-overly">
+              <a href="./product.html" class="btn-brand">view Product</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-icon">
+              <img src="./assets/img/products/product-4.jpg" alt="Product">
+            </div>
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h4>Dragon</h3>
+                <span class="text-decoration-line-through">$50KG</span>
+            </div>
+            <div class="card-overly">
+              <a href="./product.html" class="btn-brand">view Product</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Reviews Section  -->
+  <section class="reviews">
+    <div class="container">
+      <div class="intro text-center mb-5">
+        <h3 class="section-title">our happy customers</h3>
+        <p class="section-subtitle">The Passage ExperiencedASurge In Popularity During The 1960s When
+          Again During The 90s As Desktop Publishers</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-sm-flex row">
+                  <div class="col-sm-5 profile-box">
+                    <img src="./assets/img/testimonial/testimonial-1.png" alt="testimonial" class="img-fluid">
+                  </div>
+                  <div class="col-sm-7 card ">
+                    <p class="fst-italic">Not only was customer support very fast,but the design is very
+                      professional.Will definitely be looking for new products in the future from this author.</p>
+                    <div class="my-4 text-end">
+                      <h4>Jecob Oramson</h4>
+                      <p class="m-0 text-white">Happy Customers</p>
+                    </div>
+                    <img src="./assets/img/testimonial/qoutes.svg" alt="testimonial" class="img-fluid quotes float-end">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-sm-flex row">
+                  <div class="col-sm-5 profile-box">
+                    <img src="./assets/img/testimonial/testimonial-1.png" alt="testimonial" class="img-fluid">
+                  </div>
+                  <div class="col-sm-7 card">
+                    <p class="fst-italic">Not only was customer support very fast,but the design is very
+                      professional.Will definitely be looking for new products in the future from this author.</p>
+                    <div class="my-4 text-end">
+                      <h4>Lars Alisa</h4>
+                      <p class="m-0 text-white">Happy Customers</p>
+                    </div>
+                    <img src="./assets/img/testimonial/qoutes.svg" alt="testimonial" class="img-fluid quotes float-end">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="d-sm-flex row">
+                  <div class="col-sm-5 profile-box">
+                    <img src="./assets/img/testimonial/testimonial-1.png" alt="testimonial" class="img-fluid">
+                  </div>
+                  <div class="col-sm-7 card">
+                    <p class="fst-italic text-end">Not only was customer support very fast,but the design is very
+                      professional.Will definitely be looking for new products in the future from this author.</p>
+                    <div class="my-4 text-end">
+                      <h4>John Ceena</h4>
+                      <p class="m-0 text-white">Happy Customers</p>
+                    </div>
+                    <img src="./assets/img/testimonial/qoutes.svg" alt="testimonial" class="img-fluid quotes float-end">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- gallery Section  -->
+  <section class="landing_gallery">
+    <div class="container">
+      <div class="intro text-center mb-5">
+        <h3 class="section-title">our gallery</h3>
+        <p class="section-subtitle">The Passage ExperiencedASurge In Popularity During The 1960s When
+          Again During The 90s As Desktop Publishers</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="./assets/img/gallery/g-1.jpg" data-lightbox="image" data-tittle="Fruits" >
+            <img src="./assets/img/gallery/g-1.jpg" alt="Fruits" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="./assets/img/gallery/g-2.jpg" data-lightbox="image" data-tittle="Fruits" >
+            <img src="./assets/img/gallery/g-2.jpg" alt="Fruits" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="./assets/img/gallery/g-3.jpg" data-lightbox="image" data-tittle="Fruits" >
+            <img src="./assets/img/gallery/g-3.jpg" alt="Fruits" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="./assets/img/gallery/g-4.jpg" data-lightbox="image" data-tittle="Fruits" >
+            <img src="./assets/img/gallery/g-4.jpg" alt="Fruits" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="./assets/img/gallery/g-5.jpg" data-lightbox="image" data-tittle="Fruits" >
+            <img src="./assets/img/gallery/g-5.jpg" alt="Fruits" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="./assets/img/gallery/g-6.jpg" data-lightbox="image" data-tittle="Fruits" >
+            <img src="./assets/img/gallery/g-6.jpg" alt="Fruits" class="img-fluid">
+          </a>
+        </div>
+        <div class="button text-center my-5 pt-5">
+          <a href="./gallery.html" class="btn-brand">View More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer  -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-3 col-sm-6 company">
+          <h4 class="text-white">TaZza</h4>
+          <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit amet.</p>
+          <ul class="list-unstyled">
+            <li><p><i class='bx bxs-home'></i> Okara, Pakistan</p></li>
+            <li><p><i class='bx bxs-phone'></i> +923074961938</p></li>
+            <li><p><i class='bx bxs-envelope'></i> iamahsan512@gmail.com</p></li>
+          </ul>
+
+        </div>
+        <div class="col-lg-3 col-sm-6 company">
+          <h5>Customer Support</h5>
+          <ul>
+            <li><a href="./about.html"><i class='bx bx-chevron-right'></i>About Us</a></li>
+            <li><a href=""><i class='bx bx-chevron-right'></i> Privacy Policy</a></li>
+            <li><a href=""><i class='bx bx-chevron-right'></i> Term & Condition</a></li>
+            <li><a href=""><i class='bx bx-chevron-right'></i> Product Return</a></li>
+            <li><a href=""><i class='bx bx-chevron-right'></i> WholeSale Policy</a></li>
+          </ul>
+
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <h5>Quick Links </h5>
+          <ul class="link-widget">
+            <li><i class='bx bx-chevron-right'></i><a href="./product.html">Products</a></li>
+            <li><i class='bx bx-chevron-right'></i><a href="">Term & Condition</a></li>
+            <li><i class='bx bx-chevron-right'></i><a href="./contact.html">Contact</a></li>
+            <li><i class='bx bx-chevron-right'></i><a href="">Term of Use</a></li>
+            <li><i class='bx bx-chevron-right'></i><a href="">Help</a></li>
+          </ul>
+
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <h5>News Latter</h5>
+          <div class="form-group mb-4">
+            <input type="email" placeholder="Enter your E-mail"  class="form-control" required="">
+            <button type="submit" class="btn-brand mt-5">Subcribe</button>
+          </div>
+          <h5>Stay Connected</h5>
+          <div class="social-links">
+            <a href="https://www.facebook.com/ahsanmughal512/" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com/ahsan__05/?fbclid=IwAR3_CtmQ8AUaO3j8rIbzkGNL8V5q4qZl9K6Jar6HFEZ0iolQZfBC1VWrPmY" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/Iamahsan512" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/ahsan-mughal-4563a923b/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center copyright">
+          <p>Copyright © <span>AHSAN MUGHAL</span> All right Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+
+  <!-- Custom JS  -->
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html>

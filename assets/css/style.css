@@ -1,0 +1,548 @@
+/* Googel Font Barlow  */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
+
+/* Google fonts Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap');
+
+/* CSS Variables  */
+
+:root {
+    --bg-white: #fff;
+    /* Text Colors */
+    --primary-text: #061738;
+    --secondary-color: #60cd12;
+    --light-color: #e2f6de;
+    --dark-color: #03262c;
+    --text-white: #fff;
+    --text-gray: #dee2e6;
+    --anchor-color: #087aff;
+    /*Font Family*/
+    --primary-font: 'Barlow Condensed', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.5;
+    font-family: var(--primary-font);
+    color: var(--primary-text);
+
+}
+
+a,
+a.active,
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+a:hover,
+button:hover {
+    transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 9rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* Typography  */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 9rem;
+    line-height: 1.2;
+    font-weight: 600;
+    color: var(--primary-text);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: var(--primary-text);
+    font-size: 4.7rem;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    color: var(--text-white);
+    font-size: 3.1rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--primary-text);
+}
+
+h5 {
+
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--primary-text);
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+    color: var(--primary-text);
+    font-family: var(--secondary-font);
+}
+
+/* Custom Scrollbar  */
+html::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--bg-white);
+}
+
+/* Button  */
+.btn-brand {
+    position: relative;
+    color: var(--bg-white);
+    background: linear-gradient(to right, #0f7404, #5cb917);
+    z-index: 1;
+    overflow: hidden;
+    border: 0.2rem solid var(--bg-white);
+    border-radius: 3.5rem;
+    text-transform: uppercase;
+    padding: 1.5rem 3.5rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+}
+
+.btn-brand:hover {
+    background: var(--bg-white);
+    color: var(--secondary-color);
+    border: 0.2rem solid var(--secondary-color);
+}
+
+/* Section tittle  */
+.section-title {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--primary-text);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.section-subtitle {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: var(--primary-text);
+    font-family: var(--secondary-font);
+    max-width: 55rem;
+    margin: auto;
+    margin-bottom: 1.5em;
+}
+
+.about .banner_section,
+.product .banner_section,
+.gallery .banner_section,
+.contact .banner_section{
+    background: url(../img/banner-slide/top-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    min-height: auto;
+}
+
+/* Navbar  */
+header{
+    position: relative;
+}
+.navbar{
+    width: 90%;
+    margin: 0 auto;
+    background-image: url(../img/header-bg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:1rem 2rem;
+    top: 2rem;
+    left: 0;
+}
+.navbar .navbar-brand{
+    width: 7.5rem;
+    margin-top: -0.1rem;
+}
+.navbar .nav-item{
+    margin-left: 0.5rem;
+}
+.navbar .nav-link{
+    color: var(--bg-white);
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease-in;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active{
+    color: var(--secondary-color);
+}
+.call span{
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+.call p{
+    color: var(--text-white);
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+}
+.navbar .navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.navbar .navbar-toggler-icon{
+    color: var(--text-white);
+    font-size: 3.5rem;
+    height: 2.5rem; 
+}
+
+/* Header Scrolled  */
+.scroll{
+    position: fixed;
+    top: -0.4rem;
+    left: 0;
+    right: 0;
+    width: 90%;
+    z-index: 99;
+    transition: all 0.4s ease-in;
+}
+
+/* Home  */
+.home{
+    background-image: url(../img/banner-slide/Banner-1.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.home .carousel-item{
+    height: 100vh;
+    padding: 3rem 0;
+}
+.home .carousel-item .carousel-caption{
+    top: 10%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: left;
+    width: 100%;
+}
+.home .carousel-item .carousel-caption h3{
+    padding: 0.5rem 1.5rem;
+    background-color: var(--dark-color);
+    display: inline;
+    text-transform: capitalize;
+}
+.home .carousel-item .carousel-caption p{
+    max-width: 50rem;
+    margin-top: 2rem ;
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
+}
+/* Features  */
+.features .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    transition: all 0.4s ease-in;
+}
+.features .card:hover{
+    background-color: var(--dark-color);
+    
+}
+.features .card:hover .card-body h4{
+    color: var(--text-white);
+}
+.features .card:hover .card-icon{
+    border: 0.2rem solid var(--secondary-color);
+}
+.features .card .card-icon img{
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    padding: 2rem;
+    object-fit: cover;
+}
+.features .card .card-icon{
+    border-radius: 50%;
+    padding: 1rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+/* Landing About Section  */
+.landing-about{
+    background-image: url(../img/about/about-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+/* Landing Product  */
+.lading_product .card{
+    border: .2rem solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: all 0.4s ease-in;
+    overflow: hidden;
+}
+.lading_product .card:hover .card-overly{
+    position: absolute;
+    bottom:  0%;
+    left: 0; right: 0;
+    display: flex;
+}
+.lading_product .card-overly{
+    background-color: var(--dark-color);
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    
+    
+}
+.lading_product .card  span{
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Reviews section  */
+.reviews {
+    background-color: var(--light-color)
+}
+.reviews .quotes{
+    width: 7rem;
+    float: end;
+}
+.reviews .carousel-indicators{
+    bottom: -9rem;
+}
+.reviews .carousel-indicators button{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+.reviews .card{
+    text-align: right;
+    background-image: url(../img/testimonial/testimonial-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0 2rem;
+     border: 0.1rem solid transparent;
+     border-radius: 0 0.5rem 0.5rem 0;
+}
+.reviews .profile-box{
+    padding: 1.8rem;
+    background-color: var(--dark-color);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+.reviews .profile-box img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+/* Gallery landing Section  */
+.landing_gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  
+}
+/* Footer  */
+.footer{
+    background-image: url(../img/footer-bg/footer_bg.png);
+    background-position:top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 15rem;
+    padding-bottom: 0;
+}
+
+.footer h5{
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--text-white);
+}
+.footer ul li{ 
+    margin-bottom: 0.5rem;  
+    list-style: none;
+    display: flex;
+    align-items: center;
+    transition: all 1.3s ease;
+}
+.footer a,
+.footer p{
+    color: var(--text-gray);
+    font-size: 1.6rem;
+} 
+.footer i{
+    color: var(--text-gray);
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+.footer li:hover i{
+    transform: translateX(1rem);
+}
+.footer li:hover a{
+    color: var(--secondary-color);
+}
+.footer .form-control{
+    height: 5rem;
+    color: var(--text-white);
+    font-size: 1.8rem;
+    background-color: transparent;
+    border-radius: 3rem;
+    padding-left: 1.5rem;
+    max-width: 40rem;
+}
+.footer .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border: 0.1rem solid var(--secondary-color);
+}
+.footer .btn-brand{
+    padding: 0.8rem 2.7rem;
+}
+.footer .company li:hover  .company i{
+    transform: translateX(0);
+}
+.footer .social-links{
+    display: flex;
+    align-items: center;
+    float: left;
+}
+.footer .social-links i{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in;
+}
+.footer .social-links i:hover{
+    background-color: var(--secondary-color);
+    
+}
+.footer .copyright{
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.footer .copyright span{
+    color: var(--primary-text);
+    font-weight: 600;
+    font-family: var(--secondary-font);
+}
+
+/* About Page  */
+.about_section p{
+    color: var(--primary-text);
+}
+/* Product Page  */
+.product_details p{
+    color: var(--primary-text);
+    margin-bottom: 1.5rem;
+}
+/* Contact us  */
+.contact .form-section{
+    background-color: var(--light-color);
+    padding: 5rem;
+}
+.contact-details .icon{
+    font-size: 6rem;
+    margin-right: 1.6rem;
+}
+.contact-details small{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+.contact-details p{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.contact input{
+    height: 4.6rem;
+}
+.contact .form-control{
+    border: 1px solid var(--bg-white);
+    border-radius: 0.4rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: var(--secondary-font);
+    padding-left: 1rem;
+    transition: all 0.4s ease-in;
+}
+.contact .form-control:focus{
+    border: 1px solid var(--secondary-color);
+    box-shadow: none;
+}

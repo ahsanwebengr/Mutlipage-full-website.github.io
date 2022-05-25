@@ -1,0 +1,57 @@
+@media (max-width:992px) {
+    html {
+        font-size: 60%;
+    }
+
+    .navbar {
+        background-size: cover;
+        padding: 2rem;
+    }
+
+    .navbar .navbar-nav {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .navbar .navbar-nav .nav-item {
+        margin: 1.2rem 0;
+    }
+
+    .navbar .call {
+        margin-top: 2rem;
+    }
+
+    .about,
+    .product,
+    .gallery {
+        padding-top: 12.5rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 55.5%;
+    }
+
+}
+
+@media (max-width:600px) {
+    html {
+        font-size: 50.5%;
+    }
+    
+    h1 {
+        font-size: 6rem;
+        }
+}
+
+
+@media (max-width:450px) {
+    html {
+        font-size: 45.5%;
+    }
+    .navbar{
+        width: 100%;
+    }
+}
